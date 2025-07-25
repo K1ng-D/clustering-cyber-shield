@@ -1,0 +1,501 @@
+id,request_size,response_size,response_time,http_method,status_code,url_length,param_count,user_agent_length,is_ajax,attack_type_id,attack_type,description
+1,1332,3147,175,GET,200,103,4,99,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+2,1351,2558,78,GET,200,66,4,77,1,3,XSS,DOM XSS via document.location
+3,1605,4407,182,GET,200,73,2,132,1,3,XSS,Stored XSS in contact form submission
+4,4123,167,444,PUT,500,217,8,325,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+5,1550,4011,92,GET,200,83,3,92,1,3,XSS,Stored XSS in contact form submission
+6,951,1388,292,POST,403,122,3,135,0,2,CSRF,CSRF token missing in POST request
+7,1040,1618,331,POST,403,134,5,146,0,2,CSRF,CSRF token missing in POST request
+8,1121,2980,214,GET,200,79,3,92,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+9,4371,346,439,PUT,500,227,6,284,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+10,3806,111,420,POST,403,170,7,229,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+11,3016,-216,399,POST,401,96,4,171,0,2,CSRF,CSRF attack with forged banking transaction
+12,3411,307,338,DELETE,400,53,3,259,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+13,1681,3080,84,GET,200,77,4,76,1,3,XSS,DOM XSS via document.location
+14,1441,2567,75,GET,200,76,1,68,1,3,XSS,DOM XSS via document.location
+15,1572,2909,61,GET,200,66,2,72,1,3,XSS,DOM XSS via document.location
+16,2260,3562,184,GET,200,119,6,125,1,5,BruteForce,Brute force attack on /wp-login.php
+17,1623,2713,94,GET,200,81,0,77,1,3,XSS,DOM XSS via document.location
+18,3337,136,276,DELETE,400,54,6,234,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+19,1053,1420,312,POST,403,107,7,130,0,2,CSRF,CSRF token missing in POST request
+20,1133,3144,234,GET,200,69,1,111,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+21,1259,2920,209,GET,200,72,5,119,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+22,3417,341,293,DELETE,400,53,6,270,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+23,2590,6169,382,POST,404,168,8,176,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+24,4104,-38,460,PUT,500,195,9,302,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+25,1351,3066,225,GET,200,79,1,115,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+26,1077,1551,325,POST,403,115,3,155,0,2,CSRF,CSRF token missing in POST request
+27,3424,153,246,DELETE,400,65,3,291,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+28,4268,90,401,PUT,500,194,8,341,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+29,2052,3669,277,GET,200,120,6,145,1,5,BruteForce,Brute force attack on /wp-login.php
+30,863,1758,290,POST,403,104,4,116,0,2,CSRF,CSRF token missing in POST request
+31,2798,275,364,POST,401,83,6,197,0,2,CSRF,CSRF attack with forged banking transaction
+32,1565,3952,178,GET,200,82,3,134,1,3,XSS,Stored XSS in contact form submission
+33,2972,-195,389,POST,401,115,3,173,0,2,CSRF,CSRF attack with forged banking transaction
+34,2914,-28,330,POST,401,101,3,191,0,2,CSRF,CSRF attack with forged banking transaction
+35,2983,59,376,POST,401,111,3,150,0,2,CSRF,CSRF attack with forged banking transaction
+36,1495,2523,120,GET,200,80,1,85,1,3,XSS,DOM XSS via document.location
+37,2828,6298,388,POST,404,190,8,215,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+38,3127,224,387,POST,401,90,5,174,0,2,CSRF,CSRF attack with forged banking transaction
+39,1480,2991,90,GET,200,67,4,112,1,3,XSS,DOM XSS via document.location
+40,2735,6188,466,POST,404,197,9,203,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+41,2875,89,355,POST,401,104,4,165,0,2,CSRF,CSRF attack with forged banking transaction
+42,2141,3501,264,GET,200,101,6,108,1,5,BruteForce,Brute force attack on /wp-login.php
+43,1232,3250,207,GET,200,98,4,90,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+44,4261,363,396,PUT,500,210,9,327,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+45,927,1245,299,POST,403,117,5,128,0,2,CSRF,CSRF token missing in POST request
+46,1969,3800,187,GET,200,94,2,144,1,5,BruteForce,Brute force attack on /wp-login.php
+47,1240,2980,153,GET,200,88,2,116,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+48,2232,3777,236,GET,200,113,5,153,1,5,BruteForce,Brute force attack on /wp-login.php
+49,2628,5918,392,POST,404,166,11,208,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+50,2981,-30,400,POST,401,93,4,203,0,2,CSRF,CSRF attack with forged banking transaction
+51,3436,397,261,DELETE,400,31,6,263,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+52,3354,531,320,DELETE,400,38,6,250,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+53,1766,4313,190,GET,200,76,1,114,1,3,XSS,Stored XSS in contact form submission
+54,4003,4,438,PUT,500,194,7,329,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+55,2993,-81,354,POST,401,95,5,189,0,2,CSRF,CSRF attack with forged banking transaction
+56,798,1466,326,POST,403,137,3,116,0,2,CSRF,CSRF token missing in POST request
+57,2791,6161,430,POST,404,198,7,192,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+58,1921,4433,187,GET,200,81,3,119,1,3,XSS,Stored XSS in contact form submission
+59,1683,3997,150,GET,200,74,3,97,1,3,XSS,Stored XSS in contact form submission
+60,1730,4065,176,GET,200,88,3,141,1,3,XSS,Stored XSS in contact form submission
+61,1636,2612,53,GET,200,66,2,107,1,3,XSS,DOM XSS via document.location
+62,3907,-84,385,POST,403,196,7,199,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+63,1109,3238,141,GET,200,85,5,110,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+64,3988,263,364,POST,403,169,4,197,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+65,4019,-46,419,PUT,500,218,7,289,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+66,2109,3325,266,GET,200,96,4,110,1,5,BruteForce,Brute force attack on /wp-login.php
+67,3533,37,255,DELETE,400,60,6,258,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+68,1925,3253,271,GET,200,105,6,114,1,5,BruteForce,Brute force attack on /wp-login.php
+69,1588,4131,107,GET,200,83,1,122,1,3,XSS,Stored XSS in contact form submission
+70,4333,89,455,PUT,500,228,8,298,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+71,2818,35,353,POST,401,114,6,198,0,2,CSRF,CSRF attack with forged banking transaction
+72,780,1310,327,POST,403,139,7,128,0,2,CSRF,CSRF token missing in POST request
+73,1731,4289,116,GET,200,63,4,125,1,3,XSS,Stored XSS in contact form submission
+74,2152,3357,243,GET,200,104,4,157,1,5,BruteForce,Brute force attack on /wp-login.php
+75,2692,6305,458,POST,404,161,9,230,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+76,2209,3321,204,GET,200,96,4,110,1,5,BruteForce,Brute force attack on /wp-login.php
+77,3970,266,430,POST,403,177,5,222,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+78,1845,4255,176,GET,200,73,4,137,1,3,XSS,Stored XSS in contact form submission
+79,3363,526,321,DELETE,400,45,5,264,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+80,1389,3097,151,GET,200,85,4,75,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+81,852,1408,361,POST,403,114,6,133,0,2,CSRF,CSRF token missing in POST request
+82,2662,5833,419,POST,404,164,9,217,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+83,972,1772,321,POST,403,124,6,161,0,2,CSRF,CSRF token missing in POST request
+84,1544,2549,72,GET,200,76,2,61,1,3,XSS,DOM XSS via document.location
+85,3224,367,288,DELETE,400,66,5,243,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+86,3194,-32,341,DELETE,400,46,5,265,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+87,1436,2785,85,GET,200,76,1,114,1,3,XSS,DOM XSS via document.location
+88,3020,-102,382,POST,401,98,5,183,0,2,CSRF,CSRF attack with forged banking transaction
+89,2591,5948,459,POST,404,169,7,210,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+90,3825,-33,397,POST,403,190,7,245,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+91,4179,328,418,PUT,500,199,8,289,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+92,4140,127,398,PUT,500,217,8,340,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+93,695,1326,354,POST,403,100,4,156,0,2,CSRF,CSRF token missing in POST request
+94,1555,2706,87,GET,200,62,2,75,1,3,XSS,DOM XSS via document.location
+95,2956,-31,393,POST,401,83,7,186,0,2,CSRF,CSRF attack with forged banking transaction
+96,1336,3186,159,GET,200,89,3,97,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+97,2972,363,314,POST,401,114,4,198,0,2,CSRF,CSRF attack with forged banking transaction
+98,1785,4021,158,GET,200,55,1,113,1,3,XSS,Stored XSS in contact form submission
+99,4170,61,456,PUT,500,225,6,330,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+100,3720,334,390,POST,403,203,4,223,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+101,1784,4330,160,GET,200,77,4,95,1,3,XSS,Stored XSS in contact form submission
+102,1114,3385,154,GET,200,71,4,84,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+103,2158,3364,230,GET,200,130,5,106,1,5,BruteForce,Brute force attack on /wp-login.php
+104,1931,3720,273,GET,200,122,2,159,1,5,BruteForce,Brute force attack on /wp-login.php
+105,3635,73,360,POST,403,186,4,234,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+106,3678,247,357,POST,403,188,6,246,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+107,1537,3055,117,GET,200,77,0,81,1,3,XSS,DOM XSS via document.location
+108,1350,3056,160,GET,200,97,1,117,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+109,1727,4070,192,GET,200,61,3,134,1,3,XSS,Stored XSS in contact form submission
+110,1173,3458,187,GET,200,90,5,96,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+111,2865,347,391,POST,401,91,4,153,0,2,CSRF,CSRF attack with forged banking transaction
+112,2822,6354,437,POST,404,195,9,184,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+113,2204,3680,274,GET,200,113,3,151,1,5,BruteForce,Brute force attack on /wp-login.php
+114,1518,2841,134,GET,200,53,3,76,1,3,XSS,DOM XSS via document.location
+115,1171,3315,185,GET,200,98,4,125,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+116,968,1315,306,POST,403,133,7,175,0,2,CSRF,CSRF token missing in POST request
+117,2976,251,317,POST,401,83,6,183,0,2,CSRF,CSRF attack with forged banking transaction
+118,1844,4127,103,GET,200,91,1,115,1,3,XSS,Stored XSS in contact form submission
+119,815,1327,291,POST,403,126,6,152,0,2,CSRF,CSRF token missing in POST request
+120,731,1285,299,POST,403,112,3,137,0,2,CSRF,CSRF token missing in POST request
+121,1302,2930,120,GET,200,75,1,88,1,3,XSS,DOM XSS via document.location
+122,2705,5949,389,POST,404,199,10,190,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+123,2741,6273,439,POST,404,163,10,213,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+124,2799,334,355,POST,401,89,7,172,0,2,CSRF,CSRF attack with forged banking transaction
+125,2867,21,304,POST,401,106,5,153,0,2,CSRF,CSRF attack with forged banking transaction
+126,3284,398,291,DELETE,400,66,4,248,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+127,1662,3038,89,GET,200,80,4,93,1,3,XSS,DOM XSS via document.location
+128,3382,54,299,DELETE,400,57,6,240,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+129,3790,346,403,POST,403,174,5,249,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+130,1177,3410,210,GET,200,82,1,100,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+131,1538,2595,116,GET,200,79,3,99,1,3,XSS,DOM XSS via document.location
+132,2723,6105,379,POST,404,172,11,185,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+133,3437,514,290,DELETE,400,48,4,252,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+134,2562,6375,393,POST,404,176,7,175,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+135,1073,1718,283,POST,403,121,7,171,0,2,CSRF,CSRF token missing in POST request
+136,2572,6260,467,POST,404,188,7,204,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+137,3150,129,326,POST,401,102,6,152,0,2,CSRF,CSRF attack with forged banking transaction
+138,3817,257,360,POST,403,176,8,205,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+139,3419,29,268,DELETE,400,51,3,282,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+140,3207,361,331,DELETE,400,32,2,255,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+141,3073,291,357,POST,401,81,6,199,0,2,CSRF,CSRF attack with forged banking transaction
+142,3241,44,294,DELETE,400,47,5,287,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+143,2800,6279,384,POST,404,169,9,218,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+144,3516,461,288,DELETE,400,29,6,263,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+145,1379,2977,189,GET,200,99,1,102,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+146,2071,3766,256,GET,200,109,4,158,1,5,BruteForce,Brute force attack on /wp-login.php
+147,3844,172,352,POST,403,183,5,244,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+148,2618,6366,392,POST,404,184,7,174,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+149,2775,6323,404,POST,404,169,8,205,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+150,4262,376,434,PUT,500,210,9,285,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+151,2658,6310,466,POST,404,197,11,175,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+152,3396,223,252,DELETE,400,50,4,291,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+153,4101,299,444,PUT,500,193,8,336,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+154,1694,2959,69,GET,200,63,0,95,1,3,XSS,DOM XSS via document.location
+155,3400,104,291,DELETE,400,41,2,270,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+156,1777,4036,144,GET,200,77,4,108,1,3,XSS,Stored XSS in contact form submission
+157,2247,3528,275,GET,200,91,6,107,1,5,BruteForce,Brute force attack on /wp-login.php
+158,3797,98,407,POST,403,167,6,202,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+159,1158,3149,136,GET,200,71,1,82,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+160,2220,3502,230,GET,200,115,3,124,1,5,BruteForce,Brute force attack on /wp-login.php
+161,2628,6337,379,POST,404,198,10,213,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+162,1791,4409,165,GET,200,55,1,91,1,3,XSS,Stored XSS in contact form submission
+163,2227,3755,244,GET,200,95,3,126,1,5,BruteForce,Brute force attack on /wp-login.php
+164,980,1593,348,POST,403,139,6,136,0,2,CSRF,CSRF token missing in POST request
+165,2894,6132,397,POST,404,160,9,227,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+166,3109,115,366,POST,401,107,6,154,0,2,CSRF,CSRF attack with forged banking transaction
+167,1385,3160,191,GET,200,70,2,105,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+168,4116,414,462,PUT,500,201,7,313,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+169,2765,5904,407,POST,404,186,11,187,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+170,2946,-43,387,POST,401,107,4,185,0,2,CSRF,CSRF attack with forged banking transaction
+171,3895,247,353,POST,403,198,4,195,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+172,1672,4181,134,GET,200,76,2,121,1,3,XSS,Stored XSS in contact form submission
+173,2843,-14,332,POST,401,94,5,159,0,2,CSRF,CSRF attack with forged banking transaction
+174,1804,4324,129,GET,200,64,1,93,1,3,XSS,Stored XSS in contact form submission
+175,2753,6226,457,POST,404,193,9,200,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+176,1088,3323,147,GET,200,77,4,80,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+177,2583,6242,436,POST,404,161,10,180,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+178,2820,5893,422,POST,404,192,10,184,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+179,2797,-66,310,POST,401,102,5,158,0,2,CSRF,CSRF attack with forged banking transaction
+180,847,1724,345,POST,403,126,3,146,0,2,CSRF,CSRF token missing in POST request
+181,1139,2902,144,GET,200,76,3,114,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+182,1157,3312,191,GET,200,77,3,121,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+183,1916,4186,99,GET,200,75,2,117,1,3,XSS,Stored XSS in contact form submission
+184,2196,3682,271,GET,200,107,3,141,1,5,BruteForce,Brute force attack on /wp-login.php
+185,1050,1565,305,POST,403,127,3,126,0,2,CSRF,CSRF token missing in POST request
+186,1076,1329,367,POST,403,120,7,138,0,2,CSRF,CSRF token missing in POST request
+187,2793,6145,474,POST,404,184,7,197,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+188,3244,512,334,DELETE,400,42,6,253,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+189,3131,76,307,POST,401,86,6,151,0,2,CSRF,CSRF attack with forged banking transaction
+190,3805,65,348,POST,403,205,8,250,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+191,1332,3048,48,GET,200,70,1,101,1,3,XSS,DOM XSS via document.location
+192,2781,5962,467,POST,404,166,9,180,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+193,2787,285,382,POST,401,109,4,203,0,2,CSRF,CSRF attack with forged banking transaction
+194,779,1422,278,POST,403,116,4,127,0,2,CSRF,CSRF token missing in POST request
+195,3894,-62,401,POST,403,170,5,196,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+196,2766,6353,403,POST,404,171,7,213,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+197,1236,3315,177,GET,200,74,1,80,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+198,930,1691,358,POST,403,108,5,138,0,2,CSRF,CSRF token missing in POST request
+199,2940,368,324,POST,401,75,4,208,0,2,CSRF,CSRF attack with forged banking transaction
+200,2526,6032,438,POST,404,183,7,180,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+201,1270,3253,191,GET,200,108,1,96,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+202,3347,168,265,DELETE,400,28,3,241,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+203,1351,3011,116,GET,200,61,3,117,1,3,XSS,DOM XSS via document.location
+204,3759,-16,379,POST,403,188,8,240,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+205,3339,208,287,DELETE,400,37,5,292,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+206,1064,3350,198,GET,200,76,1,122,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+207,2669,6269,464,POST,404,193,10,197,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+208,1265,3001,222,GET,200,90,5,127,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+209,815,1754,305,POST,403,117,7,127,0,2,CSRF,CSRF token missing in POST request
+210,2924,224,369,POST,401,79,4,163,0,2,CSRF,CSRF attack with forged banking transaction
+211,2965,-155,373,POST,401,109,3,173,0,2,CSRF,CSRF attack with forged banking transaction
+212,1828,3991,182,GET,200,89,5,89,1,3,XSS,Stored XSS in contact form submission
+213,736,1284,275,POST,403,138,3,152,0,2,CSRF,CSRF token missing in POST request
+214,3634,222,398,POST,403,198,6,236,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+215,3125,-134,344,POST,401,89,6,176,0,2,CSRF,CSRF attack with forged banking transaction
+216,3704,330,426,POST,403,181,6,218,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+217,1072,3498,233,GET,200,92,2,104,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+218,1456,2515,98,GET,200,67,3,85,1,3,XSS,DOM XSS via document.location
+219,3679,-95,388,POST,403,203,8,230,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+220,3146,419,302,DELETE,400,59,6,283,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+221,2857,226,354,POST,401,105,6,166,0,2,CSRF,CSRF attack with forged banking transaction
+222,3622,-36,351,POST,403,192,7,209,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+223,4215,399,435,PUT,500,192,9,325,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+224,2230,3680,232,GET,200,113,6,129,1,5,BruteForce,Brute force attack on /wp-login.php
+225,2739,5801,466,POST,404,190,7,172,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+226,3948,-90,349,POST,403,184,4,237,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+227,876,1230,342,POST,403,135,5,116,0,2,CSRF,CSRF token missing in POST request
+228,1481,3039,119,GET,200,47,2,114,1,3,XSS,DOM XSS via document.location
+229,3626,344,428,POST,403,182,7,247,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+230,1842,4178,180,GET,200,92,2,98,1,3,XSS,Stored XSS in contact form submission
+231,2874,356,362,POST,401,77,3,170,0,2,CSRF,CSRF attack with forged banking transaction
+232,4230,-99,459,PUT,500,199,9,338,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+233,2896,6044,388,POST,404,159,11,216,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+234,1397,2683,56,GET,200,82,0,107,1,3,XSS,DOM XSS via document.location
+235,2759,5854,401,POST,404,195,7,172,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+236,1450,2914,92,GET,200,66,2,103,1,3,XSS,DOM XSS via document.location
+237,1383,2922,49,GET,200,84,1,78,1,3,XSS,DOM XSS via document.location
+238,3880,-82,355,POST,403,195,7,235,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+239,4318,-9,404,PUT,500,198,6,335,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+240,1486,2772,110,GET,200,54,3,66,1,3,XSS,DOM XSS via document.location
+241,1698,4203,182,GET,200,55,2,91,1,3,XSS,Stored XSS in contact form submission
+242,3202,506,340,DELETE,400,57,4,266,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+243,1563,2754,59,GET,200,69,1,75,1,3,XSS,DOM XSS via document.location
+244,1720,4070,187,GET,200,87,2,106,1,3,XSS,Stored XSS in contact form submission
+245,4110,382,365,PUT,500,207,8,332,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+246,1697,2995,106,GET,200,59,1,72,1,3,XSS,DOM XSS via document.location
+247,1468,2612,131,GET,200,76,2,101,1,3,XSS,DOM XSS via document.location
+248,1989,3677,186,GET,200,102,5,147,1,5,BruteForce,Brute force attack on /wp-login.php
+249,2890,6133,382,POST,404,166,8,172,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+250,3411,18,325,DELETE,400,52,3,287,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+251,3497,207,250,DELETE,400,40,4,290,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+252,1989,3564,248,GET,200,115,4,108,1,5,BruteForce,Brute force attack on /wp-login.php
+253,3290,369,261,DELETE,400,64,6,278,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+254,1491,2664,62,GET,200,68,0,106,1,3,XSS,DOM XSS via document.location
+255,3822,184,347,POST,403,165,8,207,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+256,956,1347,279,POST,403,120,6,135,0,2,CSRF,CSRF token missing in POST request
+257,2827,6137,443,POST,404,173,11,197,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+258,1301,2577,56,GET,200,66,2,117,1,3,XSS,DOM XSS via document.location
+259,3772,-61,348,POST,403,200,7,224,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+260,3078,350,357,POST,401,107,5,203,0,2,CSRF,CSRF attack with forged banking transaction
+261,1267,2920,185,GET,200,95,2,121,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+262,1725,4436,183,GET,200,58,4,123,1,3,XSS,Stored XSS in contact form submission
+263,805,1314,273,POST,403,126,6,129,0,2,CSRF,CSRF token missing in POST request
+264,4272,186,424,PUT,500,221,7,327,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+265,1001,1505,369,POST,403,126,7,150,0,2,CSRF,CSRF token missing in POST request
+266,2553,6205,412,POST,404,199,7,178,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+267,2898,5800,448,POST,404,159,10,192,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+268,2776,5781,451,POST,404,174,8,177,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+269,2766,4,362,POST,401,96,7,172,0,2,CSRF,CSRF attack with forged banking transaction
+270,1444,2906,107,GET,200,71,4,86,1,3,XSS,DOM XSS via document.location
+271,3411,516,295,DELETE,400,42,6,265,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+272,3768,278,356,POST,403,185,8,245,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+273,2806,6215,474,POST,404,193,10,200,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+274,3372,164,297,DELETE,400,34,3,250,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+275,2935,42,355,POST,401,79,6,169,0,2,CSRF,CSRF attack with forged banking transaction
+276,4263,466,383,PUT,500,190,5,282,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+277,4298,459,398,PUT,500,192,6,332,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+278,4052,59,390,PUT,500,196,7,329,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+279,1284,3252,226,GET,200,92,3,92,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+280,1913,3528,223,GET,200,114,2,109,1,5,BruteForce,Brute force attack on /wp-login.php
+281,1816,4241,108,GET,200,67,4,87,1,3,XSS,Stored XSS in contact form submission
+282,3513,279,328,DELETE,400,39,2,245,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+283,4359,415,413,PUT,500,225,8,282,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+284,4153,280,459,PUT,500,214,6,297,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+285,4161,-109,387,PUT,500,212,7,302,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+286,3148,164,313,DELETE,400,48,3,277,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+287,1699,4108,156,GET,200,58,5,112,1,3,XSS,Stored XSS in contact form submission
+288,1089,3419,175,GET,200,80,1,122,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+289,4161,-10,365,PUT,500,225,8,295,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+290,4079,294,429,PUT,500,217,9,312,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+291,3965,40,405,POST,403,174,8,229,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+292,1912,4410,169,GET,200,73,4,141,1,3,XSS,Stored XSS in contact form submission
+293,3480,233,312,DELETE,400,45,4,284,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+294,2840,5993,463,POST,404,162,7,203,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+295,1292,3281,153,GET,200,72,2,84,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+296,4286,311,399,PUT,500,212,8,291,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+297,1733,4215,184,GET,200,83,5,130,1,3,XSS,Stored XSS in contact form submission
+298,2112,3300,180,GET,200,113,4,117,1,5,BruteForce,Brute force attack on /wp-login.php
+299,3239,402,257,DELETE,400,44,4,292,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+300,1616,4036,98,GET,200,90,5,116,1,3,XSS,Stored XSS in contact form submission
+301,1396,3453,194,GET,200,74,4,125,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+302,715,1694,327,POST,403,105,5,171,0,2,CSRF,CSRF token missing in POST request
+303,1836,4162,163,GET,200,83,2,110,1,3,XSS,Stored XSS in contact form submission
+304,734,1244,333,POST,403,111,7,156,0,2,CSRF,CSRF token missing in POST request
+305,2717,5883,394,POST,404,174,8,175,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+306,1325,2938,73,GET,200,78,2,70,1,3,XSS,DOM XSS via document.location
+307,798,1528,307,POST,403,139,6,124,0,2,CSRF,CSRF token missing in POST request
+308,2913,149,352,POST,401,82,3,149,0,2,CSRF,CSRF attack with forged banking transaction
+309,1511,2695,60,GET,200,63,0,96,1,3,XSS,DOM XSS via document.location
+310,2602,6369,378,POST,404,181,9,183,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+311,2716,6132,396,POST,404,189,8,194,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+312,2176,3320,190,GET,200,113,2,118,1,5,BruteForce,Brute force attack on /wp-login.php
+313,1561,2662,102,GET,200,83,3,73,1,3,XSS,DOM XSS via document.location
+314,2945,276,335,POST,401,112,4,190,0,2,CSRF,CSRF attack with forged banking transaction
+315,2285,3789,223,GET,200,104,2,148,1,5,BruteForce,Brute force attack on /wp-login.php
+316,917,1262,280,POST,403,117,7,118,0,2,CSRF,CSRF token missing in POST request
+317,2874,5815,386,POST,404,159,11,216,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+318,3957,276,358,POST,403,187,5,193,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+319,2597,6006,448,POST,404,167,9,220,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+320,3306,441,340,DELETE,400,40,6,259,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+321,2178,3500,279,GET,200,93,4,151,1,5,BruteForce,Brute force attack on /wp-login.php
+322,3941,252,401,POST,403,180,8,235,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+323,2653,5967,457,POST,404,161,7,191,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+324,1189,3424,166,GET,200,89,3,102,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+325,2923,89,367,POST,401,108,4,162,0,2,CSRF,CSRF attack with forged banking transaction
+326,3672,-4,402,POST,403,186,7,246,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+327,4172,-74,457,PUT,500,216,9,307,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+328,1112,2913,206,GET,200,74,1,90,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+329,1228,3423,231,GET,200,106,2,87,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+330,1361,2718,67,GET,200,75,4,66,1,3,XSS,DOM XSS via document.location
+331,953,1324,306,POST,403,130,5,175,0,2,CSRF,CSRF token missing in POST request
+332,2887,-77,387,POST,401,88,7,169,0,2,CSRF,CSRF attack with forged banking transaction
+333,2861,6074,475,POST,404,160,8,195,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+334,3290,291,341,DELETE,400,28,2,238,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+335,3653,12,430,POST,403,188,6,229,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+336,3850,-41,380,POST,403,167,4,198,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+337,2120,3570,187,GET,200,105,2,137,1,5,BruteForce,Brute force attack on /wp-login.php
+338,896,1325,349,POST,403,139,6,139,0,2,CSRF,CSRF token missing in POST request
+339,3786,62,416,POST,403,183,8,249,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+340,3286,242,266,DELETE,400,40,2,249,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+341,1602,4065,92,GET,200,80,3,116,1,3,XSS,Stored XSS in contact form submission
+342,1823,4029,104,GET,200,59,5,128,1,3,XSS,Stored XSS in contact form submission
+343,1649,4378,105,GET,200,63,1,88,1,3,XSS,Stored XSS in contact form submission
+344,908,1705,306,POST,403,118,6,116,0,2,CSRF,CSRF token missing in POST request
+345,3763,223,358,POST,403,197,4,207,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+346,3871,210,419,POST,403,199,6,230,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+347,1379,3150,234,GET,200,103,5,103,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+348,1016,1549,314,POST,403,120,3,168,0,2,CSRF,CSRF token missing in POST request
+349,2267,3683,198,GET,200,96,6,135,1,5,BruteForce,Brute force attack on /wp-login.php
+350,2883,307,320,POST,401,94,5,174,0,2,CSRF,CSRF attack with forged banking transaction
+351,4038,314,428,PUT,500,228,8,321,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+352,2787,-137,317,POST,401,115,5,194,0,2,CSRF,CSRF attack with forged banking transaction
+353,792,1473,280,POST,403,114,4,170,0,2,CSRF,CSRF token missing in POST request
+354,3729,281,347,POST,403,181,5,216,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+355,1901,3278,230,GET,200,128,5,138,1,5,BruteForce,Brute force attack on /wp-login.php
+356,1322,2995,144,GET,200,65,4,90,1,3,XSS,DOM XSS via document.location
+357,1299,3333,163,GET,200,88,4,90,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+358,1381,2863,89,GET,200,75,1,60,1,3,XSS,DOM XSS via document.location
+359,1926,4450,153,GET,200,79,3,86,1,3,XSS,Stored XSS in contact form submission
+360,3871,352,386,POST,403,170,4,253,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+361,1676,2641,50,GET,200,49,0,65,1,3,XSS,DOM XSS via document.location
+362,1969,3499,255,GET,200,104,6,163,1,5,BruteForce,Brute force attack on /wp-login.php
+363,2859,6118,441,POST,404,198,9,195,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+364,1090,3318,149,GET,200,98,1,105,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+365,1946,3440,253,GET,200,125,2,145,1,5,BruteForce,Brute force attack on /wp-login.php
+366,3767,-164,396,POST,403,203,5,253,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+367,1902,3414,181,GET,200,94,6,160,1,5,BruteForce,Brute force attack on /wp-login.php
+368,3902,29,374,POST,403,167,8,218,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+369,1695,2500,90,GET,200,49,4,90,1,3,XSS,DOM XSS via document.location
+370,1379,3128,194,GET,200,82,2,116,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+371,3425,98,309,DELETE,400,36,6,251,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+372,2155,3297,253,GET,200,115,4,141,1,5,BruteForce,Brute force attack on /wp-login.php
+373,879,1228,351,POST,403,109,4,144,0,2,CSRF,CSRF token missing in POST request
+374,2933,40,342,POST,401,84,5,178,0,2,CSRF,CSRF attack with forged banking transaction
+375,2073,3352,261,GET,200,92,6,144,1,5,BruteForce,Brute force attack on /wp-login.php
+376,1924,4014,117,GET,200,95,3,124,1,3,XSS,Stored XSS in contact form submission
+377,1857,4051,116,GET,200,85,2,106,1,3,XSS,Stored XSS in contact form submission
+378,2234,3713,251,GET,200,114,2,105,1,5,BruteForce,Brute force attack on /wp-login.php
+379,1565,3016,142,GET,200,68,4,89,1,3,XSS,DOM XSS via document.location
+380,1648,4327,153,GET,200,86,2,116,1,3,XSS,Stored XSS in contact form submission
+381,1867,4274,159,GET,200,90,5,119,1,3,XSS,Stored XSS in contact form submission
+382,1429,2594,124,GET,200,53,2,72,1,3,XSS,DOM XSS via document.location
+383,1576,2589,60,GET,200,48,1,66,1,3,XSS,DOM XSS via document.location
+384,3198,461,331,DELETE,400,65,5,253,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+385,1311,2864,71,GET,200,71,4,98,1,3,XSS,DOM XSS via document.location
+386,1871,4482,172,GET,200,88,3,128,1,3,XSS,Stored XSS in contact form submission
+387,2292,3582,212,GET,200,116,5,161,1,5,BruteForce,Brute force attack on /wp-login.php
+388,1901,3370,269,GET,200,93,3,109,1,5,BruteForce,Brute force attack on /wp-login.php
+389,3654,169,346,POST,403,176,4,226,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+390,3632,377,430,POST,403,169,8,237,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+391,2255,3713,201,GET,200,116,3,134,1,5,BruteForce,Brute force attack on /wp-login.php
+392,3479,487,252,DELETE,400,63,4,286,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+393,3651,193,425,POST,403,174,5,237,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+394,2827,-153,302,POST,401,113,6,208,0,2,CSRF,CSRF attack with forged banking transaction
+395,1380,3361,173,GET,200,107,1,79,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+396,2860,90,323,POST,401,93,3,179,0,2,CSRF,CSRF attack with forged banking transaction
+397,1350,2940,225,GET,200,69,1,116,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+398,1912,3310,277,GET,200,128,4,156,1,5,BruteForce,Brute force attack on /wp-login.php
+399,1767,4352,183,GET,200,70,1,97,1,3,XSS,Stored XSS in contact form submission
+400,1143,3193,217,GET,200,103,3,97,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+401,1225,3059,199,GET,200,71,4,82,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+402,1035,1709,272,POST,403,123,4,117,0,2,CSRF,CSRF token missing in POST request
+403,1207,3021,192,GET,200,88,5,128,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+404,1707,4211,160,GET,200,83,2,115,1,3,XSS,Stored XSS in contact form submission
+405,1901,4236,94,GET,200,85,4,139,1,3,XSS,Stored XSS in contact form submission
+406,1884,3904,172,GET,200,62,1,107,1,3,XSS,Stored XSS in contact form submission
+407,901,1206,338,POST,403,119,6,153,0,2,CSRF,CSRF token missing in POST request
+408,3197,361,260,DELETE,400,37,2,267,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+409,1671,4042,192,GET,200,59,3,83,1,3,XSS,Stored XSS in contact form submission
+410,1397,2989,144,GET,200,101,1,100,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+411,3997,402,363,POST,403,196,6,220,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+412,1410,2834,137,GET,200,50,4,104,1,3,XSS,DOM XSS via document.location
+413,1325,3051,217,GET,200,98,1,98,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+414,1246,3032,175,GET,200,79,2,111,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+415,1622,2701,64,GET,200,83,1,111,1,3,XSS,DOM XSS via document.location
+416,4351,395,392,PUT,500,208,7,311,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+417,2243,3270,191,GET,200,96,2,123,1,5,BruteForce,Brute force attack on /wp-login.php
+418,2867,216,375,POST,401,92,3,160,0,2,CSRF,CSRF attack with forged banking transaction
+419,1090,1446,319,POST,403,114,5,147,0,2,CSRF,CSRF token missing in POST request
+420,3880,-92,406,POST,403,169,8,193,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+421,1753,3947,184,GET,200,86,1,133,1,3,XSS,Stored XSS in contact form submission
+422,3971,240,420,POST,403,183,8,220,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+423,802,1521,317,POST,403,116,3,133,0,2,CSRF,CSRF token missing in POST request
+424,3732,-57,348,POST,403,197,4,211,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+425,1711,4171,182,GET,200,78,5,89,1,3,XSS,Stored XSS in contact form submission
+426,3423,136,290,DELETE,400,46,2,291,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+427,3346,93,339,DELETE,400,50,4,260,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+428,1883,4286,137,GET,200,66,1,119,1,3,XSS,Stored XSS in contact form submission
+429,3804,-20,419,POST,403,178,5,249,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+430,3419,465,334,DELETE,400,54,2,261,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+431,1432,3211,149,GET,200,108,4,110,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+432,3764,318,363,POST,403,204,6,213,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+433,2995,245,307,POST,401,113,7,155,0,2,CSRF,CSRF attack with forged banking transaction
+434,2909,5974,379,POST,404,166,11,223,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+435,4393,222,446,PUT,500,221,9,326,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+436,2095,3433,218,GET,200,123,6,110,1,5,BruteForce,Brute force attack on /wp-login.php
+437,1340,3358,179,GET,200,108,2,78,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+438,1035,1732,369,POST,403,112,4,146,0,2,CSRF,CSRF token missing in POST request
+439,925,1292,334,POST,403,131,6,127,0,2,CSRF,CSRF token missing in POST request
+440,3931,105,393,POST,403,186,6,217,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+441,1428,2781,115,GET,200,59,2,83,1,3,XSS,DOM XSS via document.location
+442,2838,6310,447,POST,404,184,9,228,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+443,2042,3228,271,GET,200,108,2,118,1,5,BruteForce,Brute force attack on /wp-login.php
+444,2160,3380,193,GET,200,101,5,125,1,5,BruteForce,Brute force attack on /wp-login.php
+445,4168,-53,439,PUT,500,212,9,310,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+446,2612,6358,416,POST,404,178,9,215,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+447,1430,2896,46,GET,200,83,2,60,1,3,XSS,DOM XSS via document.location
+448,1850,3914,142,GET,200,94,5,109,1,3,XSS,Stored XSS in contact form submission
+449,3093,176,380,POST,401,106,6,148,0,2,CSRF,CSRF attack with forged banking transaction
+450,4327,56,377,PUT,500,214,6,320,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+451,2759,5824,411,POST,404,165,11,231,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+452,1351,2668,59,GET,200,73,4,92,1,3,XSS,DOM XSS via document.location
+453,1031,1651,357,POST,403,100,3,134,0,2,CSRF,CSRF token missing in POST request
+454,1358,3449,176,GET,200,74,1,97,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+455,1699,2879,46,GET,200,58,0,95,1,3,XSS,DOM XSS via document.location
+456,1028,1666,354,POST,403,123,4,145,0,2,CSRF,CSRF token missing in POST request
+457,1068,3010,213,GET,200,98,3,122,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+458,3841,-38,431,POST,403,171,4,193,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+459,3399,365,318,DELETE,400,63,4,243,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+460,3357,14,278,DELETE,400,27,3,244,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+461,3781,65,398,POST,403,181,7,193,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+462,3779,61,403,POST,403,200,5,231,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+463,2964,-54,338,POST,401,114,3,155,0,2,CSRF,CSRF attack with forged banking transaction
+464,3278,67,297,DELETE,400,30,2,279,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+465,3637,-92,356,POST,403,173,4,223,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+466,3923,-54,415,POST,403,205,6,233,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+467,1130,3023,141,GET,200,90,5,114,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+468,2766,5816,452,POST,404,176,7,200,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+469,1617,2531,75,GET,200,51,2,69,1,3,XSS,DOM XSS via document.location
+470,3298,-39,322,DELETE,400,30,4,281,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+471,4125,202,405,PUT,500,209,5,323,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+472,2910,6257,414,POST,404,165,11,173,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+473,3173,342,258,DELETE,400,46,5,259,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+474,3970,-137,435,POST,403,185,8,251,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+475,3742,18,425,POST,403,169,8,244,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+476,1063,1443,279,POST,403,122,4,126,0,2,CSRF,CSRF token missing in POST request
+477,1195,3304,193,GET,200,79,2,98,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
+478,2893,208,357,POST,401,115,3,157,0,2,CSRF,CSRF attack with forged banking transaction
+479,3097,-120,328,POST,401,76,7,205,0,2,CSRF,CSRF attack with forged banking transaction
+480,1732,4368,152,GET,200,67,4,113,1,3,XSS,Stored XSS in contact form submission
+481,1971,3544,203,GET,200,125,4,141,1,5,BruteForce,Brute force attack on /wp-login.php
+482,2733,6218,406,POST,404,161,11,187,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+483,3660,-24,399,POST,403,196,6,215,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+484,726,1369,317,POST,403,123,6,136,0,2,CSRF,CSRF token missing in POST request
+485,1715,4063,138,GET,200,64,5,122,1,3,XSS,Stored XSS in contact form submission
+486,3206,208,280,DELETE,400,29,4,248,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+487,2798,-57,341,POST,401,80,7,180,0,2,CSRF,CSRF attack with forged banking transaction
+488,789,1304,312,POST,403,127,4,136,0,2,CSRF,CSRF token missing in POST request
+489,812,1585,270,POST,403,133,3,132,0,2,CSRF,CSRF token missing in POST request
+490,3804,123,355,POST,403,191,4,246,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+491,4093,275,391,PUT,500,200,5,331,0,1,SQLInjection,"Union-based SQLi with SELECT null,null--"
+492,1525,2871,129,GET,200,56,1,77,1,3,XSS,DOM XSS via document.location
+493,3711,-128,382,POST,403,194,7,206,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+494,3903,69,421,POST,403,166,7,249,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+495,2672,5957,404,POST,404,178,8,202,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+496,3337,440,327,DELETE,400,41,5,280,0,1,SQLInjection,SQL injection with ' OR 1=1-- payload
+497,2891,94,310,POST,401,112,7,175,0,2,CSRF,CSRF attack with forged banking transaction
+498,2775,6350,400,POST,404,198,7,202,0,4,PathTraversal,Directory traversal attempt accessing /etc/passwd
+499,3756,-111,398,POST,403,166,4,243,0,4,PathTraversal,Path traversal with ../../../etc/shadow
+500,1234,3149,150,GET,200,107,4,90,1,3,XSS,Cross-site scripting with <script>alert(1)</script>
